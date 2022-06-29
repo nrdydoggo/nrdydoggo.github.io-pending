@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta http-equiv = "X-UA-Compatible"
+        content = "IE-Edge">
+        <title>Login form with JS</title>
+        <!-- 
+        Use <source> tag to bring sources.
+        -->
+        <script src = "src/js/login.js"></script>
+        
+    </head>
+    <body>
+        <link rel = "stylesheet" href = 
+        "src/CSS/style_Login.css">
+        <div id = "page">
+        <form>
+            <datalist id = "IDAutoComplete">
+                <option value = "testID01">
+                </option>
+                <option value = "testID02">
+                </option>
+                <option value = "testID03">
+                </option>
+            </datalist>
+            <div id = "IDPW">
+                <input id = "idinpt" type = "text" placeholder =
+                    "Input your ID or e-mail"
+                    list = "IDAutoComplete">
+                </input>
+                <br>
+                <input id = "pwinpt" type = "password" placeholder = 
+                "Input your password" onkeyup = "LoginEnter();">
+                </input>
+            </div>
+            <div>
+                <!-- Trigger -->
+                <input id = "enter" type = "submit" value = "Sign In" onclick = "Login()">
+                </input>
+            </div>
+                <br>
+                <br>
+        </form>
+            <div>
+                <input id = "register" type = "submit" value = "Or Register Now!" onclick = "Register()">
+                </input>
+            </div>
+        </div>
+    </body>
+</html>
