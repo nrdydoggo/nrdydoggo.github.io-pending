@@ -41,7 +41,7 @@ function RegConfirm()
         else
         {
         alert("Registration completed.")
-        window.location.assign("Login.html");
+        window.location.assign("index.html");
         return false;
         }
 }
