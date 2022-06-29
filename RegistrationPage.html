@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta http-equiv = "X-UA-Compatible" content = "IE=Edge">
+        <meta charset ="UTF-8">
+        <script src = "src/js/register.js"></script>
+        <title></title>
+    </head>
+    <body>
+        <link rel = "stylesheet" href = "src/CSS/style_Register.css">
+        <input id ="registrID" type = "text" placeholder = "Input your ID to use here!"></input>
+        <br><br>
+        <input id = "registrPW" type = "password" placeholder = "Input your PW to use here!"></input>
+        <br><br>
+        <input id = "Verify_RegistrPW" type = "password" placeholder = "Input your PW again"
+        onkeyup = " enterKey();"></input>
+        <p>ID creation rule: use more than one uppercases and special simbols, longer than 8 letters minimum.</p>
+        <input id = "RegistrEnter" type = "submit" onclick = "RegConfirm()"></input>
+    </body>
+</html>
